@@ -13,7 +13,7 @@ Organize esse mesmo script organizado com um arquivo de features e outro de pass
 
 # Teste antes do 3 .3 foi feito em pycharm, esta em outro repositorio
 ## Testes WEB
-[Teste pagina simples, ppagina usando tupla, pagina usando csv](https://github.com/jefshandler/projetoWeb)
+[Teste pagina simples, pagina usando tupla, pagina usando csv](https://github.com/jefshandler/projetoWeb)
 
 ## 3.3 Script organizado com Page Objects
 
