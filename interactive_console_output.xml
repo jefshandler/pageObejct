@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230312 17:49:46.797" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Jeferson\.vscode\extensions\robocorp.robotframework-lsp-1.9.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="IN RANGE">
+<var>${indice}</var>
+<arg>0</arg>
+<arg>${quantidade_produtos}</arg>
+<msg timestamp="20230312 17:49:47.559" level="FAIL">No keyword with name 'IN RANGE' found.</msg>
+<status status="FAIL" starttime="20230312 17:49:47.559" endtime="20230312 17:49:47.559"/>
+</kw>
+<kw name="Dado que acessei a tela inicial">
+<status status="NOT RUN" starttime="20230312 17:49:47.560" endtime="20230312 17:49:47.560"/>
+</kw>
+<kw name="Quando eu preencher o campo pesquisar ${indice}">
+<status status="NOT RUN" starttime="20230312 17:49:47.561" endtime="20230312 17:49:47.561"/>
+</kw>
+<kw name="E clicar no botao de pesquisa">
+<status status="NOT RUN" starttime="20230312 17:49:47.562" endtime="20230312 17:49:47.562"/>
+</kw>
+<kw name="E clico no produto">
+<status status="NOT RUN" starttime="20230312 17:49:47.563" endtime="20230312 17:49:47.563"/>
+</kw>
+<kw name="E verifico nome e preco ${indice}">
+<status status="NOT RUN" starttime="20230312 17:49:47.564" endtime="20230312 17:49:47.565"/>
+</kw>
+<kw name="E adiciono o produto no carrinho">
+<status status="NOT RUN" starttime="20230312 17:49:47.566" endtime="20230312 17:49:47.566"/>
+</kw>
+<kw name="Entao verifico mensagem de sucesso da inclusao">
+<status status="NOT RUN" starttime="20230312 17:49:47.567" endtime="20230312 17:49:47.567"/>
+</kw>
+<kw name="E verifico no carrinho nome e preco">
+<status status="NOT RUN" starttime="20230312 17:49:47.567" endtime="20230312 17:49:47.567"/>
+</kw>
+<kw name="E fecho a aplicacao">
+<status status="NOT RUN" starttime="20230312 17:49:47.568" endtime="20230312 17:49:47.568"/>
+</kw>
+<status status="PASS" starttime="20230312 17:49:46.813" endtime="20230312 22:28:33.943"/>
+</kw>
+<status status="PASS" starttime="20230312 17:49:46.813" endtime="20230312 22:28:33.943"/>
+</test>
+<status status="PASS" starttime="20230312 17:49:46.797" endtime="20230312 22:28:33.944"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
