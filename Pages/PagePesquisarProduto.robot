@@ -1,4 +1,4 @@
-*** Settings ***
+kkk*** Settings ***
 Resource    config.robot
 
 *** Keywords ***

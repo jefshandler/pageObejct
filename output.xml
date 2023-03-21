@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230312 23:06:17.043" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230321 11:11:55.940" rpa="false" schemaversion="3">
 <suite id="s1" name="TestCasePesquisarProduto" source="f:\projetoPython\iterasys\pageObejct\TestSuit\TestCasePesquisarProduto.robot">
 <test id="s1-t1" name="Pesquisar Produto" line="5">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -9,29 +9,29 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:17.340" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:17.339" endtime="20230312 23:06:17.340"/>
+<msg timestamp="20230321 11:11:56.246" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:11:56.244" endtime="20230321 11:11:56.248"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:17.342" endtime="20230312 23:06:17.342"/>
+<status status="PASS" starttime="20230321 11:11:56.248" endtime="20230321 11:11:56.249"/>
 </kw>
-<msg timestamp="20230312 23:06:17.343" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:17.339" endtime="20230312 23:06:17.343"/>
+<msg timestamp="20230321 11:11:56.249" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:11:56.244" endtime="20230321 11:11:56.249"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${tamanhoJson}</var>
 <arg>${ArquivoJson}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20230312 23:06:17.344" level="INFO">Length is 2</msg>
-<msg timestamp="20230312 23:06:17.344" level="INFO">${tamanhoJson} = 2</msg>
-<status status="PASS" starttime="20230312 23:06:17.344" endtime="20230312 23:06:17.344"/>
+<msg timestamp="20230321 11:11:56.250" level="INFO">Length is 2</msg>
+<msg timestamp="20230321 11:11:56.250" level="INFO">${tamanhoJson} = 2</msg>
+<status status="PASS" starttime="20230321 11:11:56.250" endtime="20230321 11:11:56.250"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Quantidade de Produtos: ${tamanhoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:17.344" endtime="20230312 23:06:17.345"/>
+<status status="PASS" starttime="20230321 11:11:56.251" endtime="20230321 11:11:56.251"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${indice}</var>
@@ -45,18 +45,18 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230312 23:06:17.347" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com.br'.</msg>
-<status status="PASS" starttime="20230312 23:06:17.346" endtime="20230312 23:06:20.270"/>
+<msg timestamp="20230321 11:11:56.253" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com.br'.</msg>
+<status status="PASS" starttime="20230321 11:11:56.252" endtime="20230321 11:11:58.983"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230312 23:06:23.271" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230312 23:06:20.270" endtime="20230312 23:06:23.271"/>
+<msg timestamp="20230321 11:12:01.985" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230321 11:11:58.983" endtime="20230321 11:12:01.985"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:17.346" endtime="20230312 23:06:23.271"/>
+<status status="PASS" starttime="20230321 11:11:56.252" endtime="20230321 11:12:01.986"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:17.346" endtime="20230312 23:06:23.272"/>
+<status status="PASS" starttime="20230321 11:11:56.252" endtime="20230321 11:12:01.986"/>
 </kw>
 <kw name="Quando eu preencher o campo pesquisar [${indice}]" library="PagePesquisarProduto" sourcename="Quando eu preencher o campo pesquisar [${indice}]">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -66,64 +66,64 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:23.275" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:23.273" endtime="20230312 23:06:23.275"/>
+<msg timestamp="20230321 11:12:01.991" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:01.989" endtime="20230321 11:12:01.991"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:23.276" endtime="20230312 23:06:23.277"/>
+<status status="PASS" starttime="20230321 11:12:01.992" endtime="20230321 11:12:01.993"/>
 </kw>
-<msg timestamp="20230312 23:06:23.277" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:23.273" endtime="20230312 23:06:23.278"/>
+<msg timestamp="20230321 11:12:01.995" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:01.988" endtime="20230321 11:12:01.997"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ArquivoJson}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:23.279" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:23.279" endtime="20230312 23:06:23.280"/>
+<msg timestamp="20230321 11:12:01.998" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:01.997" endtime="20230321 11:12:01.998"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${indice}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:23.280" level="INFO">${indice} = 0</msg>
-<status status="PASS" starttime="20230312 23:06:23.280" endtime="20230312 23:06:23.280"/>
+<msg timestamp="20230321 11:12:01.999" level="INFO">${indice} = 0</msg>
+<status status="PASS" starttime="20230321 11:12:01.999" endtime="20230321 11:12:02.000"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${termo_pesquisa}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>termo_pesquisa</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:23.282" level="INFO">${termo_pesquisa} = HD Portatil Externo 1TB</msg>
-<status status="PASS" starttime="20230312 23:06:23.281" endtime="20230312 23:06:23.283"/>
+<msg timestamp="20230321 11:12:02.001" level="INFO">${termo_pesquisa} = HD Portatil Externo 1TB</msg>
+<status status="PASS" starttime="20230321 11:12:02.000" endtime="20230321 11:12:02.002"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=twotabsearchtextbox</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230312 23:06:23.284" endtime="20230312 23:06:23.357"/>
+<status status="PASS" starttime="20230321 11:12:02.002" endtime="20230321 11:12:02.059"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=twotabsearchtextbox</arg>
 <arg>${termo_pesquisa}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:23.359" level="INFO">Typing text 'HD Portatil Externo 1TB' into text field 'id=twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20230312 23:06:23.358" endtime="20230312 23:06:23.509"/>
+<msg timestamp="20230321 11:12:02.060" level="INFO">Typing text 'HD Portatil Externo 1TB' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20230321 11:12:02.059" endtime="20230321 11:12:02.209"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:23.272" endtime="20230312 23:06:23.509"/>
+<status status="PASS" starttime="20230321 11:12:01.987" endtime="20230321 11:12:02.209"/>
 </kw>
 <kw name="E clicar no botao de pesquisa" library="PagePesquisarProduto">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=nav-search-submit-button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230312 23:06:23.509" endtime="20230312 23:06:23.526"/>
+<status status="PASS" starttime="20230321 11:12:02.210" endtime="20230321 11:12:02.233"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:23.527" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
-<status status="PASS" starttime="20230312 23:06:23.527" endtime="20230312 23:06:23.626"/>
+<msg timestamp="20230321 11:12:02.234" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20230321 11:12:02.233" endtime="20230321 11:12:02.320"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:23.509" endtime="20230312 23:06:23.626"/>
+<status status="PASS" starttime="20230321 11:12:02.209" endtime="20230321 11:12:02.320"/>
 </kw>
 <kw name="E clico no produto" library="PagePesquisarProduto">
 <kw name="Get From Dictionary" library="Collections">
@@ -131,27 +131,27 @@
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>produto_pesquisado</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:23.628" level="INFO">${produto_pesquisado} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
-<status status="PASS" starttime="20230312 23:06:23.627" endtime="20230312 23:06:23.628"/>
+<msg timestamp="20230321 11:12:02.321" level="INFO">${produto_pesquisado} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
+<status status="PASS" starttime="20230321 11:12:02.320" endtime="20230321 11:12:02.321"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//*[contains(text(), '${produto_pesquisado}')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230312 23:06:23.628" endtime="20230312 23:06:24.638"/>
+<status status="PASS" starttime="20230321 11:12:02.322" endtime="20230321 11:12:03.173"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[contains(text(), '${produto_pesquisado}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:24.640" level="INFO">Clicking element 'xpath=//*[contains(text(), 'HD Portátil Externo 1TB WD Western Digital USB 3.0')]'.</msg>
-<status status="PASS" starttime="20230312 23:06:24.640" endtime="20230312 23:06:25.394"/>
+<msg timestamp="20230321 11:12:03.174" level="INFO">Clicking element 'xpath=//*[contains(text(), 'HD Portátil Externo 1TB WD Western Digital USB 3.0')]'.</msg>
+<status status="PASS" starttime="20230321 11:12:03.173" endtime="20230321 11:12:05.881"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230312 23:06:30.394" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230312 23:06:25.394" endtime="20230312 23:06:30.394"/>
+<msg timestamp="20230321 11:12:10.881" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230321 11:12:05.881" endtime="20230321 11:12:10.881"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:23.627" endtime="20230312 23:06:30.395"/>
+<status status="PASS" starttime="20230321 11:12:02.320" endtime="20230321 11:12:10.881"/>
 </kw>
 <kw name="E verifico nome e preco [${indice}]" library="PageDetalheDoProduto" sourcename="E verifico nome e preco [${indice}]">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -161,83 +161,83 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:30.396" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:30.395" endtime="20230312 23:06:30.396"/>
+<msg timestamp="20230321 11:12:10.883" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:10.882" endtime="20230321 11:12:10.883"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:30.396" endtime="20230312 23:06:30.397"/>
+<status status="PASS" starttime="20230321 11:12:10.883" endtime="20230321 11:12:10.884"/>
 </kw>
-<msg timestamp="20230312 23:06:30.397" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:30.395" endtime="20230312 23:06:30.397"/>
+<msg timestamp="20230321 11:12:10.884" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:10.882" endtime="20230321 11:12:10.885"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ArquivoJson}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:30.398" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:30.398" endtime="20230312 23:06:30.398"/>
+<msg timestamp="20230321 11:12:10.885" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:10.885" endtime="20230321 11:12:10.886"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${indice}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:30.399" level="INFO">${indice} = 0</msg>
-<status status="PASS" starttime="20230312 23:06:30.398" endtime="20230312 23:06:30.399"/>
+<msg timestamp="20230321 11:12:10.886" level="INFO">${indice} = 0</msg>
+<status status="PASS" starttime="20230321 11:12:10.886" endtime="20230321 11:12:10.886"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${quantidade_produtos}</var>
 <arg>${ArquivoJson}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20230312 23:06:30.399" level="INFO">Length is 2</msg>
-<msg timestamp="20230312 23:06:30.399" level="INFO">${quantidade_produtos} = 2</msg>
-<status status="PASS" starttime="20230312 23:06:30.399" endtime="20230312 23:06:30.399"/>
+<msg timestamp="20230321 11:12:10.887" level="INFO">Length is 2</msg>
+<msg timestamp="20230321 11:12:10.887" level="INFO">${quantidade_produtos} = 2</msg>
+<status status="PASS" starttime="20230321 11:12:10.886" endtime="20230321 11:12:10.887"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${produto_pesquisado}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>produto_pesquisado</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:30.400" level="INFO">${produto_pesquisado} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
-<status status="PASS" starttime="20230312 23:06:30.400" endtime="20230312 23:06:30.400"/>
+<msg timestamp="20230321 11:12:10.888" level="INFO">${produto_pesquisado} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
+<status status="PASS" starttime="20230321 11:12:10.887" endtime="20230321 11:12:10.888"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${valor_produto}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>valor_produto</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:30.401" level="INFO">${valor_produto} = 371</msg>
-<status status="PASS" starttime="20230312 23:06:30.400" endtime="20230312 23:06:30.401"/>
+<msg timestamp="20230321 11:12:10.889" level="INFO">${valor_produto} = 371</msg>
+<status status="PASS" starttime="20230321 11:12:10.888" endtime="20230321 11:12:10.889"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath=//span[@id='productTitle']</arg>
 <arg>${produto_pesquisado}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230312 23:06:30.425" level="INFO">Element 'xpath=//span[@id='productTitle']' contains text 'HD Portátil Externo 1TB WD Western Digital USB 3.0'.</msg>
-<status status="PASS" starttime="20230312 23:06:30.402" endtime="20230312 23:06:30.426"/>
+<msg timestamp="20230321 11:12:10.919" level="INFO">Element 'xpath=//span[@id='productTitle']' contains text 'HD Portátil Externo 1TB WD Western Digital USB 3.0'.</msg>
+<status status="PASS" starttime="20230321 11:12:10.889" endtime="20230321 11:12:10.920"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>class=a-price-whole</arg>
 <arg>${valor_produto}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230312 23:06:30.446" level="INFO">Element 'class=a-price-whole' contains text '371'.</msg>
-<status status="PASS" starttime="20230312 23:06:30.426" endtime="20230312 23:06:30.447"/>
+<msg timestamp="20230321 11:12:10.946" level="INFO">Element 'class=a-price-whole' contains text '371'.</msg>
+<status status="PASS" starttime="20230321 11:12:10.920" endtime="20230321 11:12:10.946"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>ProdutoComValorde${valor_produto}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230312 23:06:30.780" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ProdutoComValorde371.png"&gt;&lt;img src="ProdutoComValorde371.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230312 23:06:30.447" endtime="20230312 23:06:30.780"/>
+<msg timestamp="20230321 11:12:11.269" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ProdutoComValorde371.png"&gt;&lt;img src="ProdutoComValorde371.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230321 11:12:10.946" endtime="20230321 11:12:11.270"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:30.395" endtime="20230312 23:06:30.780"/>
+<status status="PASS" starttime="20230321 11:12:10.881" endtime="20230321 11:12:11.270"/>
 </kw>
 <kw name="E adiciono o produto no carrinho" library="PageDetalheDoProduto">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=input[title='Adicionar ao carrinho']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:30.781" level="INFO">Clicking element 'css=input[title='Adicionar ao carrinho']'.</msg>
-<status status="PASS" starttime="20230312 23:06:30.781" endtime="20230312 23:06:31.930"/>
+<msg timestamp="20230321 11:12:11.270" level="INFO">Clicking element 'css=input[title='Adicionar ao carrinho']'.</msg>
+<status status="PASS" starttime="20230321 11:12:11.270" endtime="20230321 11:12:12.256"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:30.780" endtime="20230312 23:06:31.931"/>
+<status status="PASS" starttime="20230321 11:12:11.270" endtime="20230321 11:12:12.257"/>
 </kw>
 <kw name="Entao verifico mensagem de sucesso da inclusao" library="PageDetalheDoProduto">
 <kw name="Get From Dictionary" library="Collections">
@@ -245,37 +245,37 @@
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>mensagem_de_sucesso</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:31.932" level="INFO">${mensagem_de_sucesso} = Adicionado ao carrinho</msg>
-<status status="PASS" starttime="20230312 23:06:31.931" endtime="20230312 23:06:31.932"/>
+<msg timestamp="20230321 11:12:12.258" level="INFO">${mensagem_de_sucesso} = Adicionado ao carrinho</msg>
+<status status="PASS" starttime="20230321 11:12:12.257" endtime="20230321 11:12:12.258"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${texto_do_elemento}</var>
 <arg>css=div[data-csa-c-content-id='NATC_SMART_WAGON_CONF_MSG_SUCCESS_CONTENT'] span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:31.965" level="INFO">${texto_do_elemento} = Adicionado ao carrinho</msg>
-<status status="PASS" starttime="20230312 23:06:31.932" endtime="20230312 23:06:31.965"/>
+<msg timestamp="20230321 11:12:12.293" level="INFO">${texto_do_elemento} = Adicionado ao carrinho</msg>
+<status status="PASS" starttime="20230321 11:12:12.258" endtime="20230321 11:12:12.293"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Mensagem site: ${texto_do_elemento}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:31.965" endtime="20230312 23:06:31.965"/>
+<status status="PASS" starttime="20230321 11:12:12.293" endtime="20230321 11:12:12.294"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${texto_do_elemento}</arg>
 <arg>${mensagem_de_sucesso}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230312 23:06:31.966" endtime="20230312 23:06:31.966"/>
+<status status="PASS" starttime="20230321 11:12:12.294" endtime="20230321 11:12:12.294"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:31.931" endtime="20230312 23:06:31.966"/>
+<status status="PASS" starttime="20230321 11:12:12.257" endtime="20230321 11:12:12.294"/>
 </kw>
 <kw name="E clico no botao ir ao carrinho" library="PageDetalheDoProduto">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@href='/gp/cart/view.html?ref_=sw_gtc']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:31.967" level="INFO">Clicking element 'xpath=//a[@href='/gp/cart/view.html?ref_=sw_gtc']'.</msg>
-<status status="PASS" starttime="20230312 23:06:31.967" endtime="20230312 23:06:34.049"/>
+<msg timestamp="20230321 11:12:12.296" level="INFO">Clicking element 'xpath=//a[@href='/gp/cart/view.html?ref_=sw_gtc']'.</msg>
+<status status="PASS" starttime="20230321 11:12:12.295" endtime="20230321 11:12:14.419"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:31.967" endtime="20230312 23:06:34.049"/>
+<status status="PASS" starttime="20230321 11:12:12.295" endtime="20230321 11:12:14.420"/>
 </kw>
 <kw name="E verifico no carrinho nome e preco [${indice}]" library="PageCarrinhoProduto" sourcename="E verifico no carrinho nome e preco [${indice}]">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -285,94 +285,94 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:34.050" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:34.050" endtime="20230312 23:06:34.050"/>
+<msg timestamp="20230321 11:12:14.421" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:14.421" endtime="20230321 11:12:14.422"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:34.051" endtime="20230312 23:06:34.052"/>
+<status status="PASS" starttime="20230321 11:12:14.422" endtime="20230321 11:12:14.423"/>
 </kw>
-<msg timestamp="20230312 23:06:34.053" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:34.049" endtime="20230312 23:06:34.053"/>
+<msg timestamp="20230321 11:12:14.423" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:14.420" endtime="20230321 11:12:14.424"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ArquivoJson}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:34.054" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:34.053" endtime="20230312 23:06:34.054"/>
+<msg timestamp="20230321 11:12:14.424" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:14.424" endtime="20230321 11:12:14.424"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${indice}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:34.054" level="INFO">${indice} = 0</msg>
-<status status="PASS" starttime="20230312 23:06:34.054" endtime="20230312 23:06:34.055"/>
+<msg timestamp="20230321 11:12:14.425" level="INFO">${indice} = 0</msg>
+<status status="PASS" starttime="20230321 11:12:14.425" endtime="20230321 11:12:14.425"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${produto_pesquisado}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>produto_pesquisado</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:34.056" level="INFO">${produto_pesquisado} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
-<status status="PASS" starttime="20230312 23:06:34.055" endtime="20230312 23:06:34.056"/>
+<msg timestamp="20230321 11:12:14.426" level="INFO">${produto_pesquisado} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
+<status status="PASS" starttime="20230321 11:12:14.425" endtime="20230321 11:12:14.426"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${valor_carrinho}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>valor_carrinho</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:34.057" level="INFO">${valor_carrinho} = R$ 371,11</msg>
-<status status="PASS" starttime="20230312 23:06:34.056" endtime="20230312 23:06:34.057"/>
+<msg timestamp="20230321 11:12:14.427" level="INFO">${valor_carrinho} = R$ 371,11</msg>
+<status status="PASS" starttime="20230321 11:12:14.426" endtime="20230321 11:12:14.427"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${nome_produto_carrinho}</var>
 <arg>css=span[data-a-word-break='normal'] span[aria-hidden='true']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:34.130" level="INFO">${nome_produto_carrinho} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
-<status status="PASS" starttime="20230312 23:06:34.057" endtime="20230312 23:06:34.130"/>
+<msg timestamp="20230321 11:12:14.499" level="INFO">${nome_produto_carrinho} = HD Portátil Externo 1TB WD Western Digital USB 3.0</msg>
+<status status="PASS" starttime="20230321 11:12:14.428" endtime="20230321 11:12:14.500"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${valor_produto_carrinho}</var>
 <arg>css=.a-size-medium.a-color-base.sc-price.sc-white-space-nowrap.sc-product-price.a-text-bold</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:34.148" level="INFO">${valor_produto_carrinho} = R$ 371,11</msg>
-<status status="PASS" starttime="20230312 23:06:34.130" endtime="20230312 23:06:34.148"/>
+<msg timestamp="20230321 11:12:14.518" level="INFO">${valor_produto_carrinho} = R$ 371,11</msg>
+<status status="PASS" starttime="20230321 11:12:14.500" endtime="20230321 11:12:14.518"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Nome Produto Carrinho: ${nome_produto_carrinho}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:34.148" endtime="20230312 23:06:34.149"/>
+<status status="PASS" starttime="20230321 11:12:14.519" endtime="20230321 11:12:14.519"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Valor Produto Carrinho: ${valor_produto_carrinho}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:34.149" endtime="20230312 23:06:34.149"/>
+<status status="PASS" starttime="20230321 11:12:14.519" endtime="20230321 11:12:14.520"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${nome_produto_carrinho}</arg>
 <arg>${produto_pesquisado}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230312 23:06:34.149" endtime="20230312 23:06:34.150"/>
+<status status="PASS" starttime="20230321 11:12:14.520" endtime="20230321 11:12:14.520"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${valor_produto_carrinho}</arg>
 <arg>${valor_carrinho}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230312 23:06:34.150" endtime="20230312 23:06:34.150"/>
+<status status="PASS" starttime="20230321 11:12:14.520" endtime="20230321 11:12:14.521"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:34.049" endtime="20230312 23:06:34.150"/>
+<status status="PASS" starttime="20230321 11:12:14.420" endtime="20230321 11:12:14.521"/>
 </kw>
 <kw name="E fecho o navegador" library="PageCarrinhoProduto">
 <kw name="Fechar Navegador" library="config">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230312 23:06:34.151" endtime="20230312 23:06:36.305"/>
+<status status="PASS" starttime="20230321 11:12:14.522" endtime="20230321 11:12:16.706"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:34.151" endtime="20230312 23:06:36.307"/>
+<status status="PASS" starttime="20230321 11:12:14.521" endtime="20230321 11:12:16.707"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:34.151" endtime="20230312 23:06:36.307"/>
+<status status="PASS" starttime="20230321 11:12:14.521" endtime="20230321 11:12:16.708"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:17.345" endtime="20230312 23:06:36.307"/>
+<status status="PASS" starttime="20230321 11:11:56.251" endtime="20230321 11:12:16.708"/>
 </iter>
 <iter>
 <var name="${indice}">1</var>
@@ -382,18 +382,18 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230312 23:06:36.313" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com.br'.</msg>
-<status status="PASS" starttime="20230312 23:06:36.311" endtime="20230312 23:06:39.212"/>
+<msg timestamp="20230321 11:12:16.714" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com.br'.</msg>
+<status status="PASS" starttime="20230321 11:12:16.711" endtime="20230321 11:12:19.460"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230312 23:06:42.212" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230312 23:06:39.212" endtime="20230312 23:06:42.212"/>
+<msg timestamp="20230321 11:12:22.461" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230321 11:12:19.460" endtime="20230321 11:12:22.461"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:36.310" endtime="20230312 23:06:42.213"/>
+<status status="PASS" starttime="20230321 11:12:16.711" endtime="20230321 11:12:22.461"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:36.310" endtime="20230312 23:06:42.213"/>
+<status status="PASS" starttime="20230321 11:12:16.710" endtime="20230321 11:12:22.461"/>
 </kw>
 <kw name="Quando eu preencher o campo pesquisar [${indice}]" library="PagePesquisarProduto" sourcename="Quando eu preencher o campo pesquisar [${indice}]">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -403,64 +403,64 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:42.215" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:42.214" endtime="20230312 23:06:42.215"/>
+<msg timestamp="20230321 11:12:22.463" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:22.462" endtime="20230321 11:12:22.464"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:42.215" endtime="20230312 23:06:42.215"/>
+<status status="PASS" starttime="20230321 11:12:22.464" endtime="20230321 11:12:22.464"/>
 </kw>
-<msg timestamp="20230312 23:06:42.216" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:42.213" endtime="20230312 23:06:42.216"/>
+<msg timestamp="20230321 11:12:22.465" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:22.462" endtime="20230321 11:12:22.465"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ArquivoJson}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:42.216" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:42.216" endtime="20230312 23:06:42.216"/>
+<msg timestamp="20230321 11:12:22.466" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:22.465" endtime="20230321 11:12:22.466"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${indice}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:42.217" level="INFO">${indice} = 1</msg>
-<status status="PASS" starttime="20230312 23:06:42.217" endtime="20230312 23:06:42.217"/>
+<msg timestamp="20230321 11:12:22.466" level="INFO">${indice} = 1</msg>
+<status status="PASS" starttime="20230321 11:12:22.466" endtime="20230321 11:12:22.466"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${termo_pesquisa}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>termo_pesquisa</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:42.218" level="INFO">${termo_pesquisa} = HD Portatil Externo 1TB</msg>
-<status status="PASS" starttime="20230312 23:06:42.217" endtime="20230312 23:06:42.218"/>
+<msg timestamp="20230321 11:12:22.467" level="INFO">${termo_pesquisa} = HD Portatil Externo 1TB</msg>
+<status status="PASS" starttime="20230321 11:12:22.466" endtime="20230321 11:12:22.467"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=twotabsearchtextbox</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230312 23:06:42.218" endtime="20230312 23:06:42.243"/>
+<status status="PASS" starttime="20230321 11:12:22.467" endtime="20230321 11:12:22.490"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=twotabsearchtextbox</arg>
 <arg>${termo_pesquisa}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:42.243" level="INFO">Typing text 'HD Portatil Externo 1TB' into text field 'id=twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20230312 23:06:42.243" endtime="20230312 23:06:42.408"/>
+<msg timestamp="20230321 11:12:22.491" level="INFO">Typing text 'HD Portatil Externo 1TB' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20230321 11:12:22.491" endtime="20230321 11:12:22.636"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:42.213" endtime="20230312 23:06:42.408"/>
+<status status="PASS" starttime="20230321 11:12:22.461" endtime="20230321 11:12:22.636"/>
 </kw>
 <kw name="E clicar no botao de pesquisa" library="PagePesquisarProduto">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=nav-search-submit-button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230312 23:06:42.408" endtime="20230312 23:06:42.428"/>
+<status status="PASS" starttime="20230321 11:12:22.637" endtime="20230321 11:12:22.673"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:42.428" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
-<status status="PASS" starttime="20230312 23:06:42.428" endtime="20230312 23:06:43.832"/>
+<msg timestamp="20230321 11:12:22.674" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20230321 11:12:22.674" endtime="20230321 11:12:22.754"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:42.408" endtime="20230312 23:06:43.832"/>
+<status status="PASS" starttime="20230321 11:12:22.637" endtime="20230321 11:12:22.755"/>
 </kw>
 <kw name="E clico no produto" library="PagePesquisarProduto">
 <kw name="Get From Dictionary" library="Collections">
@@ -468,27 +468,27 @@
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>produto_pesquisado</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:43.833" level="INFO">${produto_pesquisado} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
-<status status="PASS" starttime="20230312 23:06:43.833" endtime="20230312 23:06:43.833"/>
+<msg timestamp="20230321 11:12:22.757" level="INFO">${produto_pesquisado} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
+<status status="PASS" starttime="20230321 11:12:22.755" endtime="20230321 11:12:22.757"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//*[contains(text(), '${produto_pesquisado}')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230312 23:06:43.833" endtime="20230312 23:06:43.914"/>
+<status status="PASS" starttime="20230321 11:12:22.757" endtime="20230321 11:12:23.415"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[contains(text(), '${produto_pesquisado}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:43.915" level="INFO">Clicking element 'xpath=//*[contains(text(), 'SSD Externo Portátil Sandisk Extreme 1Tb')]'.</msg>
-<status status="PASS" starttime="20230312 23:06:43.914" endtime="20230312 23:06:47.692"/>
+<msg timestamp="20230321 11:12:23.416" level="INFO">Clicking element 'xpath=//*[contains(text(), 'SSD Externo Portátil Sandisk Extreme 1Tb')]'.</msg>
+<status status="PASS" starttime="20230321 11:12:23.416" endtime="20230321 11:12:26.811"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230312 23:06:52.694" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230312 23:06:47.693" endtime="20230312 23:06:52.694"/>
+<msg timestamp="20230321 11:12:31.812" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230321 11:12:26.812" endtime="20230321 11:12:31.812"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:43.832" endtime="20230312 23:06:52.695"/>
+<status status="PASS" starttime="20230321 11:12:22.755" endtime="20230321 11:12:31.812"/>
 </kw>
 <kw name="E verifico nome e preco [${indice}]" library="PageDetalheDoProduto" sourcename="E verifico nome e preco [${indice}]">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -498,83 +498,83 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:52.699" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:52.697" endtime="20230312 23:06:52.699"/>
+<msg timestamp="20230321 11:12:31.815" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:31.813" endtime="20230321 11:12:31.815"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:52.699" endtime="20230312 23:06:52.700"/>
+<status status="PASS" starttime="20230321 11:12:31.815" endtime="20230321 11:12:31.817"/>
 </kw>
-<msg timestamp="20230312 23:06:52.700" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:52.696" endtime="20230312 23:06:52.701"/>
+<msg timestamp="20230321 11:12:31.818" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:31.813" endtime="20230321 11:12:31.818"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ArquivoJson}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:52.702" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:52.701" endtime="20230312 23:06:52.702"/>
+<msg timestamp="20230321 11:12:31.818" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:31.818" endtime="20230321 11:12:31.819"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${indice}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:52.703" level="INFO">${indice} = 1</msg>
-<status status="PASS" starttime="20230312 23:06:52.703" endtime="20230312 23:06:52.703"/>
+<msg timestamp="20230321 11:12:31.819" level="INFO">${indice} = 1</msg>
+<status status="PASS" starttime="20230321 11:12:31.819" endtime="20230321 11:12:31.819"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${quantidade_produtos}</var>
 <arg>${ArquivoJson}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20230312 23:06:52.704" level="INFO">Length is 2</msg>
-<msg timestamp="20230312 23:06:52.705" level="INFO">${quantidade_produtos} = 2</msg>
-<status status="PASS" starttime="20230312 23:06:52.704" endtime="20230312 23:06:52.705"/>
+<msg timestamp="20230321 11:12:31.820" level="INFO">Length is 2</msg>
+<msg timestamp="20230321 11:12:31.820" level="INFO">${quantidade_produtos} = 2</msg>
+<status status="PASS" starttime="20230321 11:12:31.819" endtime="20230321 11:12:31.820"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${produto_pesquisado}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>produto_pesquisado</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:52.707" level="INFO">${produto_pesquisado} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
-<status status="PASS" starttime="20230312 23:06:52.705" endtime="20230312 23:06:52.707"/>
+<msg timestamp="20230321 11:12:31.821" level="INFO">${produto_pesquisado} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
+<status status="PASS" starttime="20230321 11:12:31.820" endtime="20230321 11:12:31.821"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${valor_produto}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>valor_produto</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:52.708" level="INFO">${valor_produto} = 720</msg>
-<status status="PASS" starttime="20230312 23:06:52.707" endtime="20230312 23:06:52.708"/>
+<msg timestamp="20230321 11:12:31.822" level="INFO">${valor_produto} = 713</msg>
+<status status="PASS" starttime="20230321 11:12:31.821" endtime="20230321 11:12:31.822"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath=//span[@id='productTitle']</arg>
 <arg>${produto_pesquisado}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230312 23:06:52.738" level="INFO">Element 'xpath=//span[@id='productTitle']' contains text 'SSD Externo Portátil Sandisk Extreme 1Tb'.</msg>
-<status status="PASS" starttime="20230312 23:06:52.709" endtime="20230312 23:06:52.738"/>
+<msg timestamp="20230321 11:12:31.848" level="INFO">Element 'xpath=//span[@id='productTitle']' contains text 'SSD Externo Portátil Sandisk Extreme 1Tb'.</msg>
+<status status="PASS" starttime="20230321 11:12:31.822" endtime="20230321 11:12:31.848"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>class=a-price-whole</arg>
 <arg>${valor_produto}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230312 23:06:52.757" level="INFO">Element 'class=a-price-whole' contains text '720'.</msg>
-<status status="PASS" starttime="20230312 23:06:52.738" endtime="20230312 23:06:52.758"/>
+<msg timestamp="20230321 11:12:31.870" level="INFO">Element 'class=a-price-whole' contains text '713'.</msg>
+<status status="PASS" starttime="20230321 11:12:31.849" endtime="20230321 11:12:31.870"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>ProdutoComValorde${valor_produto}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230312 23:06:53.170" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ProdutoComValorde720.png"&gt;&lt;img src="ProdutoComValorde720.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230312 23:06:52.758" endtime="20230312 23:06:53.170"/>
+<msg timestamp="20230321 11:12:32.371" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ProdutoComValorde713.png"&gt;&lt;img src="ProdutoComValorde713.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230321 11:12:31.870" endtime="20230321 11:12:32.371"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:52.695" endtime="20230312 23:06:53.171"/>
+<status status="PASS" starttime="20230321 11:12:31.812" endtime="20230321 11:12:32.371"/>
 </kw>
 <kw name="E adiciono o produto no carrinho" library="PageDetalheDoProduto">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=input[title='Adicionar ao carrinho']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:53.172" level="INFO">Clicking element 'css=input[title='Adicionar ao carrinho']'.</msg>
-<status status="PASS" starttime="20230312 23:06:53.171" endtime="20230312 23:06:54.465"/>
+<msg timestamp="20230321 11:12:32.372" level="INFO">Clicking element 'css=input[title='Adicionar ao carrinho']'.</msg>
+<status status="PASS" starttime="20230321 11:12:32.371" endtime="20230321 11:12:33.244"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:53.171" endtime="20230312 23:06:54.466"/>
+<status status="PASS" starttime="20230321 11:12:32.371" endtime="20230321 11:12:33.245"/>
 </kw>
 <kw name="Entao verifico mensagem de sucesso da inclusao" library="PageDetalheDoProduto">
 <kw name="Get From Dictionary" library="Collections">
@@ -582,37 +582,37 @@
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>mensagem_de_sucesso</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:54.467" level="INFO">${mensagem_de_sucesso} = Adicionado ao carrinho</msg>
-<status status="PASS" starttime="20230312 23:06:54.467" endtime="20230312 23:06:54.467"/>
+<msg timestamp="20230321 11:12:33.246" level="INFO">${mensagem_de_sucesso} = Adicionado ao carrinho</msg>
+<status status="PASS" starttime="20230321 11:12:33.245" endtime="20230321 11:12:33.246"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${texto_do_elemento}</var>
 <arg>css=div[data-csa-c-content-id='NATC_SMART_WAGON_CONF_MSG_SUCCESS_CONTENT'] span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:54.533" level="INFO">${texto_do_elemento} = Adicionado ao carrinho</msg>
-<status status="PASS" starttime="20230312 23:06:54.468" endtime="20230312 23:06:54.533"/>
+<msg timestamp="20230321 11:12:33.287" level="INFO">${texto_do_elemento} = Adicionado ao carrinho</msg>
+<status status="PASS" starttime="20230321 11:12:33.246" endtime="20230321 11:12:33.287"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Mensagem site: ${texto_do_elemento}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:54.533" endtime="20230312 23:06:54.534"/>
+<status status="PASS" starttime="20230321 11:12:33.288" endtime="20230321 11:12:33.288"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${texto_do_elemento}</arg>
 <arg>${mensagem_de_sucesso}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230312 23:06:54.534" endtime="20230312 23:06:54.534"/>
+<status status="PASS" starttime="20230321 11:12:33.288" endtime="20230321 11:12:33.289"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:54.466" endtime="20230312 23:06:54.534"/>
+<status status="PASS" starttime="20230321 11:12:33.245" endtime="20230321 11:12:33.289"/>
 </kw>
 <kw name="E clico no botao ir ao carrinho" library="PageDetalheDoProduto">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@href='/gp/cart/view.html?ref_=sw_gtc']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:54.535" level="INFO">Clicking element 'xpath=//a[@href='/gp/cart/view.html?ref_=sw_gtc']'.</msg>
-<status status="PASS" starttime="20230312 23:06:54.535" endtime="20230312 23:06:56.456"/>
+<msg timestamp="20230321 11:12:33.290" level="INFO">Clicking element 'xpath=//a[@href='/gp/cart/view.html?ref_=sw_gtc']'.</msg>
+<status status="PASS" starttime="20230321 11:12:33.290" endtime="20230321 11:12:35.158"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:54.534" endtime="20230312 23:06:56.457"/>
+<status status="PASS" starttime="20230321 11:12:33.289" endtime="20230321 11:12:35.158"/>
 </kw>
 <kw name="E verifico no carrinho nome e preco [${indice}]" library="PageCarrinhoProduto" sourcename="E verifico no carrinho nome e preco [${indice}]">
 <kw name="Ler Arquivo Json [Vendors\\dados_produtos.json]" library="config" sourcename="Ler Arquivo Json [${LocalArquivoJson}]">
@@ -622,100 +622,100 @@
 <arg>${LocalArquivoJson}</arg>
 <arg>UTF-8</arg>
 <doc>Load JSON from file.</doc>
-<msg timestamp="20230312 23:06:56.458" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:56.457" endtime="20230312 23:06:56.458"/>
+<msg timestamp="20230321 11:12:35.160" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:35.159" endtime="20230321 11:12:35.160"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nArquivo utilizado: ${LocalArquivoJson}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:56.458" endtime="20230312 23:06:56.459"/>
+<status status="PASS" starttime="20230321 11:12:35.160" endtime="20230321 11:12:35.161"/>
 </kw>
-<msg timestamp="20230312 23:06:56.459" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:56.457" endtime="20230312 23:06:56.459"/>
+<msg timestamp="20230321 11:12:35.161" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:35.159" endtime="20230321 11:12:35.161"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ArquivoJson}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:56.460" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
-<status status="PASS" starttime="20230312 23:06:56.459" endtime="20230312 23:06:56.460"/>
+<msg timestamp="20230321 11:12:35.162" level="INFO">${ArquivoJson} = [{'indice': '0', 'termo_pesquisa': 'HD Portatil Externo 1TB', 'produto_pesquisado': 'HD Portátil Externo 1TB WD Western Digital USB 3.0', 'valor_produto': '371', 'mensagem_de_sucesso': 'Adicionado ao ...</msg>
+<status status="PASS" starttime="20230321 11:12:35.161" endtime="20230321 11:12:35.162"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${indice}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230312 23:06:56.460" level="INFO">${indice} = 1</msg>
-<status status="PASS" starttime="20230312 23:06:56.460" endtime="20230312 23:06:56.460"/>
+<msg timestamp="20230321 11:12:35.162" level="INFO">${indice} = 1</msg>
+<status status="PASS" starttime="20230321 11:12:35.162" endtime="20230321 11:12:35.162"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${produto_pesquisado}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>produto_pesquisado</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:56.461" level="INFO">${produto_pesquisado} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
-<status status="PASS" starttime="20230312 23:06:56.461" endtime="20230312 23:06:56.462"/>
+<msg timestamp="20230321 11:12:35.163" level="INFO">${produto_pesquisado} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
+<status status="PASS" starttime="20230321 11:12:35.162" endtime="20230321 11:12:35.163"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${valor_carrinho}</var>
 <arg>${ArquivoJson[${indice}]}</arg>
 <arg>valor_carrinho</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230312 23:06:56.462" level="INFO">${valor_carrinho} = R$ 720,00</msg>
-<status status="PASS" starttime="20230312 23:06:56.462" endtime="20230312 23:06:56.462"/>
+<msg timestamp="20230321 11:12:35.165" level="INFO">${valor_carrinho} = R$ 713,59</msg>
+<status status="PASS" starttime="20230321 11:12:35.163" endtime="20230321 11:12:35.165"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${nome_produto_carrinho}</var>
 <arg>css=span[data-a-word-break='normal'] span[aria-hidden='true']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:56.509" level="INFO">${nome_produto_carrinho} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
-<status status="PASS" starttime="20230312 23:06:56.463" endtime="20230312 23:06:56.509"/>
+<msg timestamp="20230321 11:12:35.283" level="INFO">${nome_produto_carrinho} = SSD Externo Portátil Sandisk Extreme 1Tb</msg>
+<status status="PASS" starttime="20230321 11:12:35.166" endtime="20230321 11:12:35.283"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${valor_produto_carrinho}</var>
 <arg>css=.a-size-medium.a-color-base.sc-price.sc-white-space-nowrap.sc-product-price.a-text-bold</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230312 23:06:56.526" level="INFO">${valor_produto_carrinho} = R$ 720,00</msg>
-<status status="PASS" starttime="20230312 23:06:56.509" endtime="20230312 23:06:56.526"/>
+<msg timestamp="20230321 11:12:35.305" level="INFO">${valor_produto_carrinho} = R$ 713,59</msg>
+<status status="PASS" starttime="20230321 11:12:35.283" endtime="20230321 11:12:35.305"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Nome Produto Carrinho: ${nome_produto_carrinho}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:56.526" endtime="20230312 23:06:56.527"/>
+<status status="PASS" starttime="20230321 11:12:35.305" endtime="20230321 11:12:35.306"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Valor Produto Carrinho: ${valor_produto_carrinho}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230312 23:06:56.527" endtime="20230312 23:06:56.527"/>
+<status status="PASS" starttime="20230321 11:12:35.306" endtime="20230321 11:12:35.306"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${nome_produto_carrinho}</arg>
 <arg>${produto_pesquisado}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230312 23:06:56.527" endtime="20230312 23:06:56.528"/>
+<status status="PASS" starttime="20230321 11:12:35.307" endtime="20230321 11:12:35.307"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${valor_produto_carrinho}</arg>
 <arg>${valor_carrinho}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230312 23:06:56.528" endtime="20230312 23:06:56.528"/>
+<status status="PASS" starttime="20230321 11:12:35.307" endtime="20230321 11:12:35.307"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:56.457" endtime="20230312 23:06:56.528"/>
+<status status="PASS" starttime="20230321 11:12:35.159" endtime="20230321 11:12:35.308"/>
 </kw>
 <kw name="E fecho o navegador" library="PageCarrinhoProduto">
 <kw name="Fechar Navegador" library="config">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230312 23:06:56.529" endtime="20230312 23:06:58.757"/>
+<status status="PASS" starttime="20230321 11:12:35.308" endtime="20230321 11:12:37.413"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:56.529" endtime="20230312 23:06:58.757"/>
+<status status="PASS" starttime="20230321 11:12:35.308" endtime="20230321 11:12:37.413"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:56.528" endtime="20230312 23:06:58.757"/>
+<status status="PASS" starttime="20230321 11:12:35.308" endtime="20230321 11:12:37.413"/>
 </kw>
-<status status="PASS" starttime="20230312 23:06:36.309" endtime="20230312 23:06:58.757"/>
+<status status="PASS" starttime="20230321 11:12:16.709" endtime="20230321 11:12:37.413"/>
 </iter>
-<status status="PASS" starttime="20230312 23:06:17.345" endtime="20230312 23:06:58.758"/>
+<status status="PASS" starttime="20230321 11:11:56.251" endtime="20230321 11:12:37.413"/>
 </for>
-<status status="PASS" starttime="20230312 23:06:17.338" endtime="20230312 23:06:58.759"/>
+<status status="PASS" starttime="20230321 11:11:56.242" endtime="20230321 11:12:37.414"/>
 </test>
-<status status="PASS" starttime="20230312 23:06:17.047" endtime="20230312 23:06:58.759"/>
+<status status="PASS" starttime="20230321 11:11:55.944" endtime="20230321 11:12:37.416"/>
 </suite>
 <statistics>
 <total>
@@ -728,7 +728,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230312 23:06:17.070" level="ERROR">Error in file 'f:\projetoPython\iterasys\pageObejct\Pages\config.robot' on line 7: Setting 'Suite Setup' is not allowed in resource file.</msg>
-<msg timestamp="20230312 23:06:17.072" level="ERROR">Error in file 'f:\projetoPython\iterasys\pageObejct\Pages\config.robot' on line 8: Setting 'Suite Teardown' is not allowed in resource file.</msg>
 </errors>
 </robot>

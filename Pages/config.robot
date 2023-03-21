@@ -4,8 +4,6 @@ Library    JSONLibrary
 Library    BuiltIn
 Library    Collections
 
-Suite Setup     Abrir Site
-Suite Teardown  Fechar Navegador
 
 *** Variables ***
 ${url}      https://www.amazon.com.br
